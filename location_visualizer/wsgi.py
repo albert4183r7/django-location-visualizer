@@ -1,5 +1,5 @@
 """
-WSGI config for Map project.
+WSGI config for location_visualizer project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Map.settings')
+# Updated to point to the new settings file
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'location_visualizer.settings')
 
 application = get_wsgi_application()

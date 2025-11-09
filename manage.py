@@ -6,7 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Map.settings')
+    # Updated to point to the new settings file
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'location_visualizer.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
